@@ -31,7 +31,7 @@ jobs:
 
     - name: PYTEST
       run: |
-        pip inctall pytest
+        pip install pytest
         pytest test
             
 
