@@ -1,9 +1,13 @@
 import datetime
 
 from flask import Flask, jsonify, request
-
 from module_30_ci_linters.homework.hw1.src.create_data import create_db_client
-from module_30_ci_linters.homework.hw1.src.models import Client, ClientParking, Parking, db
+from module_30_ci_linters.homework.hw1.src.models import (
+    Client,
+    ClientParking,
+    Parking,
+    db,
+)
 
 URL_MAIN = "postgresql+psycopg2://admin:admin@localhost/skillbox_mod_30"
 
