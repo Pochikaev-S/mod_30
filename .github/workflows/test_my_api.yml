@@ -17,8 +17,9 @@ jobs:
           
     - name: BLACK
       run: |
-        black --diff --check module_30_ci_linters.homework.hw1.srs/
-        
+        black --diff --check git.srs/
+
+    - uses: actions/checkout@v4
     - name: ISORT
       run: |
         pip install isort
