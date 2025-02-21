@@ -17,7 +17,7 @@ jobs:
           
     - name: BLACK
       run: |
-        black --diff --check srs/
+        black --diff --check module_30_ci_linters.homework.hw1.srs/
         
     # - name: ISORT
     #   run: |
