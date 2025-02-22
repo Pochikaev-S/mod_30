@@ -32,7 +32,7 @@ jobs:
     - name: FLAKE 8
       run: |
         pip install flake8==4.0.1 flake8-bugbear==22.1.11 flake8-pie==0.15.0
-        flake8 $(git ls-files '*.py')
+        flake8 
         
     # - name: PYTEST
     #   run: |
