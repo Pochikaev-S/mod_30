@@ -24,10 +24,10 @@ jobs:
         pip install isort
         isort --diff --check --profile black $(git ls-files '*.py')
 
-    # - name: MYPY
-    #   run: |
-    #     pip install mypy
-    #     mypy $(git ls-files '*.py')
+    - name: MYPY
+      run: |
+        pip install mypy
+        mypy $(git ls-files '*.py')
         
     - name: FLAKE 8
       run: |
@@ -35,9 +35,7 @@ jobs:
         pip install flake8
         flake8 $(git ls-files '*.py')
         
-    # - name: PYTEST
-    #   run: |
-    #     pip install pytest
-    #     pytest test
-                  
-        # pylint $(git ls-files '*.py')
+    - name: PYTEST
+      run: |
+        pip install pytest
+        pytest test
