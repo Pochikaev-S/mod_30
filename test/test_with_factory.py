@@ -1,5 +1,5 @@
-from module_30_ci_linters.homework.hw1.src.models import Client, Parking
 from factories import ClientFactory, ParkingFactory
+from module_30_ci_linters.homework.hw1.src.models import Client, Parking
 
 
 def test_create_client(app, db):
