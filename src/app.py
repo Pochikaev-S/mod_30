@@ -1,8 +1,8 @@
 import datetime
 
 from flask import Flask, jsonify, request
-from src.create_data import create_db_client
-from src.models import (
+from create_data import create_db_client
+from models import (
     Client,
     ClientParking,
     Parking,
