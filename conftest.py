@@ -5,7 +5,7 @@ from src.models import (
     ClientParking,
     Parking,
 )
-from module_30_ci_linters.homework.hw1.src.models import db as _db
+from src.models import db as _db
 
 url_test = "sqlite://"
 
