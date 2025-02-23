@@ -1,5 +1,5 @@
 import pytest
-from .src.app import create_app
+from ..src.app import create_app
 from .src.models import (
     Client,
     ClientParking,
