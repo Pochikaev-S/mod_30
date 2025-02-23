@@ -1,7 +1,7 @@
 import random
 
 import faker
-from module_30_ci_linters.homework.hw1.src.models import Client
+from src.models import Client
 
 faker = faker.Faker("en_US")
 

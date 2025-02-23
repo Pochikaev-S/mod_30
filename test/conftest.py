@@ -1,6 +1,6 @@
 import pytest
-from module_30_ci_linters.homework.hw1.src.app import create_app
-from module_30_ci_linters.homework.hw1.src.models import (
+from src.app import create_app
+from src.models import (
     Client,
     ClientParking,
     Parking,
