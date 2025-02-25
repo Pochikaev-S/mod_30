@@ -1,4 +1,4 @@
-import pytest # type: ignore
+import pytest  # type: ignore
 
 from mod_30.src.app import create_app
 from mod_30.src.models import (

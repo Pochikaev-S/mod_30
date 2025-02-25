@@ -1,6 +1,6 @@
 import random
 
-import faker # type: ignore
+import faker  # type: ignore
 
 from mod_30.src.models import Client
 
