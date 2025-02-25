@@ -70,9 +70,9 @@ class ClientParking(db.Model):  # type: ignore
     @classmethod
     def search_client_parking(cls, client_id=client_id, parking_id=parking_id):
         client_parking = db.session.query(cls).where(
-            (cls.client_id == client_id)
-            & (cls.parking_id == parking_id)
-            & (cls.time_out is None)
+            (cls.client_id == client_id) &
+            (cls.parking_id == parking_id) &
+            (cls.time_out is None)
         )
 
         return client_parking.one_or_none()
