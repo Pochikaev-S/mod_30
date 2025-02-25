@@ -1,6 +1,6 @@
 import pytest
-from src.app import create_app
-from src.models import (
+from mod_30.src.app import create_app
+from mod_30.src.models import (
     Client,
     ClientParking,
     Parking,
