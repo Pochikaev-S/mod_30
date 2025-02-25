@@ -37,5 +37,5 @@ jobs:
         
     - name: PYTEST
       run: |
-        pip install pytest flask
+        pip install pytest flask faker
         pytest test
