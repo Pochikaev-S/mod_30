@@ -41,7 +41,7 @@ def test_create_client_parking(client) -> None:
     resp = client.post(
         "/client-parkings", data=client_parking, content_type="application/json"
     )
-    assert resp.status_code == 200
+    assert resp.status_code == 201
 
 
 def test_del_client_parking(client) -> None:
@@ -51,4 +51,4 @@ def test_del_client_parking(client) -> None:
     resp = client.post(
         "/client-parkings", data=client_parking, content_type="application/json"
     )
-    assert resp.status_code == 200
+    assert resp.status_code == 201
