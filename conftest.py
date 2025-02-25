@@ -1,10 +1,12 @@
 import pytest
+
 from mod_30.src.app import create_app
 from mod_30.src.models import (
     Client,
     ClientParking,
     Parking,
 )
+
 from mod_30.src.models import db as _db
 
 url_test = "sqlite://"

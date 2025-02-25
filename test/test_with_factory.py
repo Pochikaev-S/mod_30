@@ -1,5 +1,5 @@
-from mod_30.test.factories import ClientFactory, ParkingFactory
 from mod_30.src.models import Client, Parking
+from mod_30.test.factories import ClientFactory, ParkingFactory
 
 
 def test_create_client(app, db):

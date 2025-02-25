@@ -1,6 +1,7 @@
 import random
 
 import faker
+
 from mod_30.src.models import Client
 
 faker = faker.Faker("en_US")
