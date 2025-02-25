@@ -1,6 +1,5 @@
 import datetime
 
-
 from flask import Flask, jsonify, request  # type: ignore
 
 from mod_30.src.create_data import create_db_client
