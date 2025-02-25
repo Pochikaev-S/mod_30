@@ -24,16 +24,16 @@ jobs:
         pip install isort
         isort --diff --check --profile black $(git ls-files '*.py')
 
-    - name: MYPY
-      run: |
-        pip install mypy
-        mypy $(git ls-files '*.py')
-        
-    # - name: FLAKE 8
+    # - name: MYPY
     #   run: |
-    #     # pip install flake8==4.0.1 flake8-bugbear==22.1.11 flake8-pie==0.15.0
-    #     pip install flake8
-    #     flake8 $(git ls-files '*.py')
+    #     pip install mypy
+    #     mypy $(git ls-files '*.py')
+        
+    - name: FLAKE 8
+      run: |
+        # pip install flake8==4.0.1 flake8-bugbear==22.1.11 flake8-pie==0.15.0
+        pip install flake8
+        flake8 --diff --check $(git ls-files '*.py')
         
     - name: PYTEST
       run: |
