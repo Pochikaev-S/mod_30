@@ -14,15 +14,15 @@ jobs:
     #     python -m pip install --upgrade pip
     #     pip install -r requirements.txt
 
-    # - name: BLACK
-    #   run: |
-    #     pip install black
-    #     black --diff --check $(git ls-files '*.py')
+    - name: BLACK
+      run: |
+        pip install black
+        black --diff --check $(git ls-files '*.py')
 
-    # - name: ISORT
-    #   run: |
-    #     pip install isort
-    #     isort --diff --check --profile black $(git ls-files '*.py')
+    - name: ISORT
+      run: |
+        pip install isort
+        isort --diff --check --profile black $(git ls-files '*.py')
 
     # - name: MYPY
     #   run: |
