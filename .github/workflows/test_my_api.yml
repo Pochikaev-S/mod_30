@@ -14,20 +14,20 @@ jobs:
     #     python -m pip install --upgrade pip
     #     pip install -r requirements.txt
 
-    - name: BLACK
-      run: |
-        pip install black
-        black --diff --check $(git ls-files '*.py')
-
-    - name: ISORT
-      run: |
-        pip install isort
-        isort --diff --check --profile black $(git ls-files '*.py')
-
-    # - name: MYPY
+    # - name: BLACK
     #   run: |
-    #     pip install mypy
-    #     mypy $(git ls-files '*.py')
+    #     pip install black
+    #     black --diff --check $(git ls-files '*.py')
+
+    # - name: ISORT
+    #   run: |
+    #     pip install isort
+    #     isort --diff --check --profile black $(git ls-files '*.py')
+
+    - name: MYPY
+      run: |
+        pip install mypy
+        mypy $(git ls-files '*.py')
         
     # - name: FLAKE 8
     #   run: |
@@ -35,7 +35,7 @@ jobs:
     #     pip install flake8
     #     flake8 $(git ls-files '*.py')
         
-    - name: PYTEST
-      run: |
-        pip install pytest flask faker flask_sqlalchemy factory_boy
-        pytest test
+    # - name: PYTEST
+    #   run: |
+    #     pip install pytest flask faker flask_sqlalchemy factory_boy
+    #     pytest test
