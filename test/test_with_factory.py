@@ -1,4 +1,4 @@
-from mod_30.factories import ClientFactory, ParkingFactory
+from mod_30.test.factories import ClientFactory, ParkingFactory
 from mod_30.src.models import Client, Parking
 
 
