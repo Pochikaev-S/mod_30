@@ -18,13 +18,13 @@ def create_app(url=URL_MAIN):
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.init_app(app)
 
-    @app.before_request
-    def before_request_func():
-        db.drop_all()
-        db.create_all()
+    # @app.before_request
+    # def before_request_func():
+    #     db.drop_all()
+    #     db.create_all()
 
-        db.session.bulk_save_objects(create_db_client(10))
-        db.session.commit()
+    #     db.session.bulk_save_objects(create_db_client(10))
+    #     db.session.commit()
 
     @app.teardown_appcontext
     def shutdown_session(exception=None):
