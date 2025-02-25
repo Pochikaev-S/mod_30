@@ -1,7 +1,7 @@
 import datetime
 import json
 
-import pytest
+import pytest # type: ignore
 
 
 @pytest.mark.parametrize("route", ["/clients", "/clients/1"])

@@ -1,11 +1,11 @@
 from typing import Any, Dict
 
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy # type: ignore
 
 db = SQLAlchemy()
 
 
-class Client(db.Model):
+class Client(db.Model): # type: ignore
     __tablename__ = "client"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
@@ -27,7 +27,7 @@ class Client(db.Model):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
-class Parking(db.Model):
+class Parking(db.Model): # type: ignore
     __tablename__ = "parking"
     id = db.Column(db.Integer, primary_key=True)
     address = db.Column(db.String(100), nullable=False)
@@ -49,7 +49,7 @@ class Parking(db.Model):
         )
 
 
-class ClientParking(db.Model):
+class ClientParking(db.Model): # type: ignore
     __tablename__ = "client_parking"
 
     id = db.Column(db.Integer, primary_key=True)
