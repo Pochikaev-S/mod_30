@@ -6,7 +6,6 @@ from mod_30.src.models import (
     ClientParking,
     Parking,
 )
-
 from mod_30.src.models import db as _db
 
 url_test = "sqlite://"
